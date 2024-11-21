@@ -9,7 +9,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.9]
+        python-version: [3.12.7]
 
     steps:
     - uses: actions/checkout@v4
@@ -24,7 +24,7 @@ jobs:
     - name: Building Containers
       run: |
         python create_env.py
-        docker compose up -d 
+        docker compose up --build -d
         
     - name: Run Tests
       run: |
