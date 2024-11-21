@@ -28,4 +28,4 @@ jobs:
         
     - name: Run Tests
       run: |
-        docker exec -it sampleshareMB_web python manage.py test
+        docker exec -it sampleshareMB_web sh -c "python manage.py test"
