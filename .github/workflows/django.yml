@@ -28,6 +28,4 @@ jobs:
         
     - name: Run Tests
       run: |
-        docker exec sampleshareMB_web sh -c "python manage.py makemigrations"
-        docker exec sampleshareMB_web sh -c "python manage.py migrate"
         docker exec sampleshareMB_web sh -c "python manage.py test"
