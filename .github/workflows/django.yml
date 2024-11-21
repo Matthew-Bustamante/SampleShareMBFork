@@ -24,7 +24,7 @@ jobs:
     - name: Building Containers
       run: |
         python create_env.py
-        docker compose up --build --exit code from
+        docker compose up -d 
         
     - name: Run Tests
       run: |
