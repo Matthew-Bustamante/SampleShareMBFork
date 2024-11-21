@@ -28,4 +28,5 @@ jobs:
         
     - name: Run Tests
       run: |
+        sleep 30s
         docker exec sampleshareMB_web sh -c "python manage.py test"
