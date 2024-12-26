@@ -1,8 +1,9 @@
 name: Django CI
 
-on: pull-request:
-  branches: [master]
-  branches: [dev]
+on: 
+  pull-request:
+    branches: [master]
+    branches: [dev]
 
 jobs:
   build:
