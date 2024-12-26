@@ -26,7 +26,9 @@ jobs:
         python create_env.py
         docker compose up --build -d
         
-    - name: Run Tests
+    - name: Waiting For Containers to Initialize
       run: |
         sleep 30s
+    - name: Running Tests
+      run: | 
         docker exec sampleshareMB_web sh -c "python manage.py test"
