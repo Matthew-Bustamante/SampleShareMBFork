@@ -1,4 +1,5 @@
-## **SampleShare**
+## **SampleShare**  [![Django Tests](https://github.com/Matthew-Bustamante/SampleShareMBFork/actions/workflows/django.yml/badge.svg)](https://github.com/Matthew-Bustamante/SampleShareMBFork/actions/workflows/django.yml)
+
 SampleShare is an audio sample sharing social media web application in development. 
 
 <img width="256" alt="ss-logo" src="https://github.com/user-attachments/assets/36bfaa1e-85f8-4bb6-a5b6-68188bf9a72c">
