@@ -1,0 +1,12 @@
+asgiref
+cryptography
+Django
+mysql-connector-python
+mysqlclient
+psycopg2-binary
+PyMySQL
+python-decouple
+sqlparse
+cryptography 
+mutagen
+pillow

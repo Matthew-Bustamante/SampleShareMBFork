@@ -1,7 +1,7 @@
 services:
   db:
     image: mysql:latest
-    container_name: sampleshare_db
+    container_name: sampleshareMB_db
     restart: always
     volumes: 
       - data:/var/lib/mysql
@@ -14,7 +14,7 @@ services:
     build:
       context: .
       dockerfile: dockerfile
-    container_name: sampleshare_web
+    container_name: sampleshareMB_web
     command: >
       sh -c "python3 manage.py migrate --noinput && python manage.py runserver 0.0.0.0:8000"
     restart: always
