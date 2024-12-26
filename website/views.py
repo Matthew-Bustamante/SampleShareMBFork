@@ -695,7 +695,7 @@ def update_comment(request, pk):
 
 def delete_comment(request, pk):
     if request.user.is_authenticated:
-        deleteComment = Comment.objects.get(id=pk)
+        deleteComment = Coment.objects.get(id=pk)
         deleteComment.delete()
         messages.success(request, "Comment Was Deleted...")
         return redirect("user_post", deleteComment.posts.id)
